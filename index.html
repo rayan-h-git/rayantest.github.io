@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Rayan Hussain - Portfolio</title> <!-- -->
+    <!-- Pulls in Tailwind CSS for instant styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <style>
+        /* Adds a smooth fade when toggling themes */
+        body { transition: background-color 0.3s, color 0.3s; }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans antialiased">
+    <div class="max-w-3xl mx-auto px-6 py-16">
+        
+        <!-- Header & Theme Toggle -->
+        <div class="flex justify-between items-center mb-12">
+            <div>
+                <h1 class="text-4xl font-extrabold text-blue-600 dark:text-blue-400">Shaik Rayan Hussain</h1> <!--[cite: 1] -->
+                <p class="text-xl mt-2 font-medium text-gray-600 dark:text-gray-300">Product & Delivery Manager</p> <!--[cite: 1] -->
+            </div>
+            <!-- Interactivity: Dark Mode Toggle -->
+            <button onclick="document.documentElement.classList.toggle('dark')" class="px-4 py-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-100 rounded-lg shadow font-semibold transition">
+                Toggle Dark Mode
+            </button>
+        </div>
+
+        <!-- About Section -->
+        <div class="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-8 mb-8 border border-gray-100 dark:border-gray-700">
+            <p class="text-lg leading-relaxed">
+                Driving digital product strategy, roadmap ownership, and workflow automation. <!--[cite: 1] -->
+            </p>
+            <div class="mt-6">
+                <!-- Interactivity: Hover Scale Effect -->
+                <a href="Rayan_Resume_Product_Delivery_Manager.pdf" target="_blank" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 shadow-md transition transform hover:scale-105">
+                    Download My Resume
+                </a> 
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-8 border border-gray-100 dark:border-gray-700">
+            <h2 class="text-2xl font-bold mb-6 border-b border-gray-200 dark:border-gray-700 pb-2">Career Highlights</h2>
+            <ul class="space-y-4">
+                <!-- Interactivity: Clickable Alerts -->
+                <li class="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900 transition cursor-pointer" onclick="alert('Led the 0→1 launch for Mental Wellness, defining the care model and generating 4L revenue with positive CM2.')">
+                    <strong class="text-blue-700 dark:text-blue-400">Betterway</strong> - Program Manager, New Categories (Click to view impact) <!--[cite: 1] -->
+                </li>
+                <li class="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900 transition cursor-pointer" onclick="alert('Led end-to-end LMS migration to Laravel/Astro.js stack, increasing traffic from 3K to 15K.')">
+                    <strong class="text-blue-700 dark:text-blue-400">Academically</strong> - First Product Hire <!--[cite: 1] -->
+                </li>
+                <li class="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900 transition cursor-pointer" onclick="alert('Built patient-care CRM reducing query-resolution TAT from 72 hours to 3 hours.')">
+                    <strong class="text-blue-700 dark:text-blue-400">Curelink</strong> - Assistant Product Manager <!--[cite: 1] -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
